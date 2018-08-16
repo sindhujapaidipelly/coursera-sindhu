@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello Coursera</title>
-  </head>
-  <body>
-    <h1>Hello Coursera Students</h1>
-  </body>
+<html ng-app='LunchCheck'>
+<script src="angular.min.js"></script>
+<script src="app.js"></script>
+	<body ng-controller='LunchCheckController'>
+		<h1>Order Lunch Items</h1>	
+		<div>
+			<input type="text" ng-model="lunchItems">
+			<p>Note: Empty item is not considered, i.e., , , is not considered as an item towards to the count.</p>
+			<br>
+			<button ng-click='countItems()'>Check If Too Much</button>
+			<br>
+			<p ng-style="{color: txtColor}">{{printMessage}}</p>
+		</div>
+	</body>
 </html>
