@@ -1,0 +1,7 @@
+<ul>
+  <li ng-repeat="item in menu.found track by $index">
+    {{ item }}
+    <button ng-click="menu.onRemove({index: $index});">Narrow It Down For Me!</button>
+  </li>
+</ul>
+<div ng-if="menu.nothing">Nothing found</div>
