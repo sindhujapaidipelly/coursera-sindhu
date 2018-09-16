@@ -1,0 +1,10 @@
+<a ui-sref="home" href="#/">Home</a>
+&lt;
+<span>Categories</span>
+
+<ul>
+  <li ng-repeat="item in categoryList.categories_list"
+      ui-sref="items({itemId: item.short_name})">
+    {{ item.name }}
+  </li>
+</ul>
