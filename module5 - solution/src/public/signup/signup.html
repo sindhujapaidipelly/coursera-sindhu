@@ -43,6 +43,7 @@
     <input type="text" class="form-control"
      name="phone"
      placeholder="Phone number ###-###-####"
+     required=""
      pattern="(\d{3})-(\d{3})-(\d{4})"
      ng-model="signUpCtrl.info.phone">
     <span ng-if="signUpForm.phone.$invalid && signUpForm.phone.$touched">
